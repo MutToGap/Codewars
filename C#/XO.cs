@@ -5,12 +5,10 @@
 
 using System.Linq;
 
-namespace Codewars {
-    public static class Kata {
-        public static bool XO(string input) {
-            int oCount = input.Count(n => n == 'o' || n == 'O');
-            int xCount = input.Count(n => n == 'x' || n == 'X');
-            return oCount == xCount;
-        }
+public static class Kata {
+    public static bool XO(string input) {
+        int oCount = input.Count(n => n == 'o' || n == 'O');
+        int xCount = input.Count(n => n == 'x' || n == 'X');
+        return oCount == xCount;
     }
 }
